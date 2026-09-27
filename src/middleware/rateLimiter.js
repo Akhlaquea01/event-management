@@ -14,18 +14,20 @@ const createLimiterHandler = (message) => (req, res) => {
  */
 export const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 10, // limit each IP to 100 requests per windowMs
+    max: 200, // limit each IP
+    skip: () => process.env.NODE_ENV === 'test',
     standardHeaders: true, // Return rate limit info in `RateLimit-*` headers
     legacyHeaders: false, // Disable `X-RateLimit-*` headers
     handler: createLimiterHandler('Too many requests from this IP, please try again after 15 minutes.')
 });
 
 /**
- * 2. Auth limiter for login / register to prevent brute-force attacks (10 attempts per 15 min)
+ * 2. Auth limiter for login / register to prevent brute-force attacks
  */
 export const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    max: 10,
+    max: 50,
+    skip: () => process.env.NODE_ENV === 'test',
     standardHeaders: true,
     legacyHeaders: false,
     handler: createLimiterHandler('Too many login/registration attempts. Please try again after 15 minutes.')
