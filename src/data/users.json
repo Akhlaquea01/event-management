@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Akhlaque",
+    "email": "akhlaquea01@gmail.com",
+    "password": "$2b$10$gEF.12womWclX4/Gh7iM4OQnD8l1LPOxxY84Ef23E3oK1fD69kela",
+    "role": "attendee",
+    "createdAt": "2026-08-15T05:19:32.145Z"
+  },
+  {
+    "id": 2,
+    "name": "Admin",
+    "email": "admin@admin.com",
+    "password": "$2b$10$FfEBJmzGfhxPZOpuvaRzxOr.4HQCDNtqRnep2J1OKZymTCslPEDnC",
+    "role": "admin",
+    "createdAt": "2026-09-27T18:05:47.931Z"
+  },
+  {
+    "id": 3,
+    "name": "Alice Organizer",
+    "email": "alice@example.com",
+    "password": "$2b$10$gEF.12womWclX4/Gh7iM4OQnD8l1LPOxxY84Ef23E3oK1fD69kela",
+    "role": "organizer",
+    "createdAt": "2026-09-27T18:55:40.120Z"
+  }
+]

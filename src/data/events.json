@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Node.js Virtual Conf",
+    "description": "A deep dive into Node",
+    "date": "2026-10-30",
+    "time": "10:00 AM",
+    "organizerId": 3,
+    "capacity": 100,
+    "participants": [
+      {
+        "userId": 1,
+        "name": "Akhlaque",
+        "email": "akhlaquea01@gmail.com",
+        "registeredAt": "2026-09-27T19:08:56.467Z"
+      }
+    ],
+    "createdAt": "2026-09-27T18:57:13.250Z"
+  }
+]
